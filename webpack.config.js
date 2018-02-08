@@ -10,7 +10,18 @@ module.exports = {
   devServer: {
     contentBase: './dist'
   },
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      },
+    ]
+  },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({ title: 'Easynvest front-end test' })
   ]
 };

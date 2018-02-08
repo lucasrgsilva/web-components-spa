@@ -1,0 +1,42 @@
+
+.navbar,
+.nav-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+}
+
+.nav-content {
+  list-style-type: none;
+}
+ 
+.nav-item {
+  border-right: 1px solid #aaa;
+  padding: 0 1rem;
+}
+ 
+.nav-item:last-child {
+  border-right: none;
+}
+ 
+.nav-item a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+ 
+.nav-item a:hover {
+  transition: all 0.5s ease;
+  color: #333;
+}
+
+.nav-item a.active { 
+  color: #333;
+}
