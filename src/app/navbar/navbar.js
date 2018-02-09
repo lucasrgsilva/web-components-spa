@@ -1,5 +1,5 @@
 import './navbar.css';
-import { Router } from "../router";
+import { Router } from "../core/router";
 
 export class Navbar extends HTMLElement {
   constructor() {

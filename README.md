@@ -8,6 +8,11 @@ https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
 https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
 https://developers.google.com/web/ilt/pwa/lab-indexeddb
 
+**Web Components
+https://developer.mozilla.org/en-US/docs/Web/Web_Components
+https://w3c.github.io/webcomponents/spec/custom/
+https://developers.google.com/web/fundamentals/web-components/customelements
+
 **Input styles
 https://codepen.io/sevilayha/pen/IdGKH
 

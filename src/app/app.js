@@ -1,6 +1,6 @@
 import './app.css';
-import * as providers from './providers';
-import { Router } from "./router";
+import * as providers from './core/define-elements';
+import { Router } from "./core/router";
 
 export class App {
   constructor() {
@@ -15,7 +15,9 @@ export class App {
     if (path) {
       this.app.innerHTML = `
         <app-navbar></app-navbar>
-        <${path.component}></${path.component}>
+        <div class="container">
+          <${path.component}></${path.component}>
+        </div>
       `;
     } else {
       this.router.navigate('/cadastro');

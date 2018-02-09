@@ -2,3 +2,12 @@
   margin: 0;
   padding: 0;
 }
+
+.container { 
+  font-family:'Roboto';
+  width:70%; 
+  margin:30px auto 0; 
+  display:block; 
+  background:#FFF;
+  padding:10px 50px 50px;
+}

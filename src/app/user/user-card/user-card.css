@@ -1,0 +1,23 @@
+
+.card {
+  background-color: #f6f6f6;
+  color: #999999;
+  border-radius: 0.25rem;
+  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+.card-title {
+  color: #696969;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-body {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-top: .5rem;
+  margin-bottom: 1.25rem;
+}
