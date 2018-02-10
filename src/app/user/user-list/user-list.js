@@ -4,6 +4,7 @@ export class UserList extends HTMLElement {
   constructor() {
     super();
     this.userService = new UserService();
+    this.addEventListener('render', e => this._render());
     this._render();
   }
 

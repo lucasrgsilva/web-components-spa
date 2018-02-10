@@ -3,7 +3,6 @@ import './user-card.css';
 export class UserCard extends HTMLElement {
   constructor() {
     super();
-    this._user = {};
   }
 
   attributeChangedCallback(name, oldV, newV) {
@@ -35,7 +34,7 @@ export class UserCard extends HTMLElement {
         </div>
         <div class="btn-group">
           <button class="btn btn-primary">Editar</button>
-          <button class="btn btn-danger delete-control" data-key="${this.user.email}">Excluir</button>
+          <app-user-delete-button data-key="${this.user.email}"></app-user-delete-button>
         </div>
       </div>
     `;

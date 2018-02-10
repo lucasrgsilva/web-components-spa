@@ -23,4 +23,8 @@ export class App {
       this.router.navigate('/cadastro');
     }
   }
+
+  static reload() {
+    this.render();
+  }
 }
