@@ -1,20 +1,26 @@
-#Referencias
+# [Easynvest](https://www.easynvest.com.br/) front-end test
 
-**Javascript
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes
-https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Form_validation
+## Requirements
 
-**indexedBD
-https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB
-https://developers.google.com/web/ilt/pwa/lab-indexeddb
+Make sure you have [node and npm](https://nodejs.org/en/download/) installed
 
-**Web Components
-https://developer.mozilla.org/en-US/docs/Web/Web_Components
-https://w3c.github.io/webcomponents/spec/custom/
-https://developers.google.com/web/fundamentals/web-components/customelements
+```sh
+node -v && npm -v
+```
 
-**Input styles
-https://codepen.io/sevilayha/pen/IdGKH
+## Installing / Usage
 
-**Navbar
-https://codepen.io/sahilpopli/pen/jcqBk
+Start locally
+
+```sh
+npm install
+npm start 
+```
+
+## Developing
+
+Technologies used
+
+- [VanillaJS](https://en.wikipedia.org/wiki/JavaScript), [ES6+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+- [IndexedDB](https://developers.google.com/web/ilt/pwa/lab-indexeddb)
+- [Web Components](https://developers.google.com/web/fundamentals/web-components/customelements)

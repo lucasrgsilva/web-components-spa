@@ -1,5 +1,5 @@
 export const customRules = {
-  name: function (value) {
+  name: (value) => {
     if (value.length < 3) {
       return {
         isInvalid: true,
@@ -8,14 +8,25 @@ export const customRules = {
     }
     return {};
   },
-  email: function (value) {
-    const emailRegExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    if (!emailRegExp.test(value)) {
+  email: (value) => {
+    const regExp = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    if (!regExp.test(value)) {
       return {
         isInvalid: true,
         message: "Email inválido"
       };
     }
     return {};
-  }
+  },
+  // If you want you can validate cpf
+  // cpf: (value) => {
+  //   const regExp = /^([0-9]{2}[\.]?[0-9]{3}[\.]?[0-9]{3}[\/]?[0-9]{4}[-]?[0-9]{2})|([0-9]{3}[\.]?[0-9]{3}[\.]?[0-9]{3}[-]?[0-9]{2})/;
+  //   if (!regExp.test(value)) {
+  //     return {
+  //       isInvalid: true,
+  //       message: "CPF inválido"
+  //     };
+  //   }
+  //   return {};
+  // },
 };

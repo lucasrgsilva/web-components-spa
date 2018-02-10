@@ -23,6 +23,11 @@
   margin-bottom: 1.25rem;
 }
 
+.btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
 .btn {
   border: none;
   padding: 0.5rem;
@@ -43,6 +48,6 @@
   color: white;
 }
 
-.btn-primary:hover, .btn-danger:hover {
+.btn-primary:not(:disabled):hover, .btn-danger:not(:disabled):hover {
   opacity: 0.9;
 }

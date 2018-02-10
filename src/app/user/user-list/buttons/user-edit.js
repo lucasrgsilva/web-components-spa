@@ -24,7 +24,7 @@ export class UserEditButton extends HTMLElement {
   }
 
   _onEditUser() {
-    
+    console.log('Not implemented yet');
   }
 
   _render() {
@@ -32,6 +32,7 @@ export class UserEditButton extends HTMLElement {
 
     button.className = 'btn btn-primary';
     button.innerText = 'Editar';
+    button.disabled = true;
     button.addEventListener('click', () => {
       this._onEditUser();
     });
