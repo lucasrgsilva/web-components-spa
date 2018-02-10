@@ -7,7 +7,7 @@ export class Router {
     ]
   }
 
-  get path() {
+  get route() {
     return this.routes.find(url => url.path === this.url);
   }
 

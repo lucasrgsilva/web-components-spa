@@ -10,21 +10,17 @@ export class App {
   }
 
   render() {
-    const path = this.router.path;
+    const route = this.router.route;
     
-    if (path) {
+    if (route) {
       this.app.innerHTML = `
         <app-navbar></app-navbar>
         <div class="container">
-          <${path.component}></${path.component}>
+          <${route.component}></${route.component}>
         </div>
       `;
     } else {
       this.router.navigate('/cadastro');
     }
-  }
-
-  static reload() {
-    this.render();
   }
 }

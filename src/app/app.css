@@ -15,30 +15,6 @@
 
 
 /* Buttons ======================== */
-.btn {
-  border: none;
-  padding: 0.5rem;
-  text-transform: lowercase;
-  cursor: pointer;
-  height: 36px;
-  line-height: 36px;
-  padding: 0 1.5rem;
-}
-
-.btn-primary {
-  background:#00c8b3;
-  color: white;
-}
-
-.btn-danger {
-  background: #ee6e73;
-  color: white;
-}
-
-.btn-primary:hover, .btn-danger:hover {
-  opacity: 0.9;
-}
-
 .big-button {
   background:#00c8b3;
   border: none;

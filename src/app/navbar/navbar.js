@@ -6,6 +6,11 @@ export class Navbar extends HTMLElement {
     super();
 
     this.router = new Router();
+    this._render();
+    this._onActiveRoute(this.router.url);
+  }
+
+  _render() {
     this.innerHTML = `
       <nav class="navbar">
         <ul class="nav-content">
@@ -18,10 +23,9 @@ export class Navbar extends HTMLElement {
         </ul>
       </nav>
     `;
-    this.setActiveRoute(this.router.url);
   }
 
-  setActiveRoute(url) {
+  _onActiveRoute(url) {
     this.querySelectorAll('nav.navbar > ul > li > a').forEach(a => {
       a.hash.slice(1) === url ? a.classList.add('active') : a.classList.remove('active');
     });

@@ -23,20 +23,20 @@ export class UserDeleteButton extends HTMLElement {
     this.setAttribute('data-key', key);
   }
 
-  async _deleteUser() {
+  async _onDeleteUser() {
     await this.userService.delete(this.key);
-    
+
     const event = new Event('render');
     document.querySelector('app-user-list').dispatchEvent(event);
   }
 
   _render() {
     const button = document.createElement('button');
-    
+
     button.className = 'btn btn-danger';
     button.innerText = 'Excluir';
     button.addEventListener('click', () => {
-      this._deleteUser();
+      this._onDeleteUser();
     });
 
     this.appendChild(button);
