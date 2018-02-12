@@ -1,5 +1,5 @@
 import './app.css';
-import * as providers from './core/define-elements';
+import './core/define-elements';
 import { Router } from "./core/router";
 
 export class App {

@@ -1,7 +1,15 @@
 
 import { idb } from '../../db/idb';
 
+let instance;
+
 export class UserService {
+  constructor() {
+    if(!instance) {
+      instance = this;
+    }
+    return instance;
+  }
 
   get(email) {
     return idb.then(db => {

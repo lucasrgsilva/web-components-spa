@@ -10,6 +10,4 @@ customElements.define('app-user-list', UserList);
 customElements.define('app-user-delete-button', UserDeleteButton);
 customElements.define('app-user-edit-button', UserEditButton);
 
-export default { };
-
 

@@ -22,6 +22,10 @@ const idbPromise = new Promise((resolve, reject) => {
     }
   }
 
+  DBOpenRequest.onerror = event => {
+    reject("Database error: " + event.target.errorCode)
+  };
+
   DBOpenRequest.onupgradeneeded = event => {
     const db = event.target.result;
     db.createObjectStore("users", { keyPath: 'email' });
