@@ -22,5 +22,5 @@ npm start
 Technologies used
 
 - [VanillaJS](https://en.wikipedia.org/wiki/JavaScript), [ES6+](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
-- [IndexedDB](https://developers.google.com/web/ilt/pwa/lab-indexeddb)
-- [Web Components](https://developers.google.com/web/fundamentals/web-components/customelements)
+- [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+- [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)

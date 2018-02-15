@@ -7,8 +7,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "test": "jest",
-    "_test": "mocha --require babel-register tests/app.spec.js",
-    "test-watch": "mocha tests/**/*.js -w"
+    "test-watch": "jest --watch"
   },
   "keywords": [],
   "author": "",
@@ -16,12 +15,9 @@
   "devDependencies": {
     "babel": "^6.23.0",
     "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0",
-    "chai": "^4.1.2",
     "css-loader": "^0.28.9",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^22.2.2",
-    "mocha": "^5.0.0",
     "style-loader": "^0.20.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.1"

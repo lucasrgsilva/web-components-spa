@@ -1,4 +1,4 @@
-// import './user-create.css';
+import './user-create.css';
 import { customRules } from './custom-rules';
 import { UserService } from '../services/user.service';
 import { Router } from '../../core/router';
