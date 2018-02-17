@@ -5,7 +5,9 @@
 
 # dependencies
 /node_modules
+/todolist
 
 # System Files
 .DS_Store
 Thumbs.db
+.vscode
